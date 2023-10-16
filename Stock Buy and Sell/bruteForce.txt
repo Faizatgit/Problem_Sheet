@@ -1,0 +1,6 @@
+Approach: 
+
+1. Use a for loop of ‘i’ from 0 to n.
+2. Use another for loop of j from ‘i+1’ to n.
+3. If arr[j] > arr[i] , take the difference and compare  and store it in the maxPro variable.
+   Return maxPro.
