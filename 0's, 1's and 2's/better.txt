@@ -6,3 +6,9 @@ Approach:
 
 3. In 2nd traversal of array, we will now over write the first ‘a’ indices / positions in array with ’0’,
    the next ‘b’ with ‘1’ and the remaining ‘c’ with ‘2’.
+
+
+Time Complexity: O(N) + O(N), where N = size of the array. 
+First O(N) for counting the number of 0’s, 1’s, 2’s, and second O(N) for placing them correctly in the original array.
+
+Space Complexity: O(1) as we are not using any extra space.
