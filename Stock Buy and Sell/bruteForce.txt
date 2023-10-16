@@ -4,3 +4,7 @@ Approach:
 2. Use another for loop of j from ‘i+1’ to n.
 3. If arr[j] > arr[i] , take the difference and compare  and store it in the maxPro variable.
    Return maxPro.
+
+Time complexity: O(n^2)
+
+Space Complexity: O(1)
