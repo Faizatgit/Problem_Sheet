@@ -1,0 +1,8 @@
+Approach: 
+
+1.Take 3 variables to maintain the count of 0, 1 and 2.
+2.Travel the array once and increment the corresponding counting variables
+( let’s consider count_0 = a, count_1 = b, count_2 = c )
+
+3. In 2nd traversal of array, we will now over write the first ‘a’ indices / positions in array with ’0’,
+   the next ‘b’ with ‘1’ and the remaining ‘c’ with ‘2’.
