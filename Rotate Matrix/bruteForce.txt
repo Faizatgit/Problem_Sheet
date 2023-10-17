@@ -1,0 +1,7 @@
+Approach: Take another dummy matrix of n*n, and then take the first row of the matrix 
+and put it in the last column of the dummy matrix, take the second row of the matrix, 
+and put it in the second last column of the matrix and so.
+
+Time Complexity: O(N*N) to linearly iterate and put it into some other matrix.
+
+Space Complexity: O(N*N) to copy it into some other matrix.
