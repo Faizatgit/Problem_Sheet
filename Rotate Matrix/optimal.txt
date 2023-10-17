@@ -1,0 +1,7 @@
+Step 1: Transpose the matrix. (transposing means changing columns to rows and rows to columns)
+
+Step 2: Reverse each row of the matrix.
+
+Time Complexity: O(N*N) + O(N*N).One O(N*N) is for transposing the matrix and the other is for reversing the matrix.
+
+Space Complexity: O(1).
