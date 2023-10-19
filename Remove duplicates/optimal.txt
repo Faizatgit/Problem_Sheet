@@ -1,0 +1,6 @@
+Approach:
+
+1.Take a variable i as 0;
+2.Use a for loop by using a variable ‘j’ from 1 to length of the array.
+3.If arr[j] != arr[i], increase ‘i’ and update arr[i] == arr[j].
+4.After completion of the loop return i+1, i.e size of the array of unique elements.
