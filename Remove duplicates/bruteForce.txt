@@ -1,0 +1,13 @@
+Approach: 
+
+1.Declare a HashSet.
+
+2.Run a for loop from starting to the end.
+
+3.Put every element of the array in the set.
+
+4.Store size of the set in a variable K.
+
+5.Now put all elements of the set in the array from the starting of the array.
+
+6.Return K.
