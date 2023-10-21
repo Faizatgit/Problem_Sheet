@@ -1,0 +1,15 @@
+Approach:
+The steps are as follows:
+
+First, assume the two arrays as a single array and calculate the gap value i.e. ceil((size of arr1[] + size of arr2[]) / 2).
+We will perform the following operations for each gap until the value of the gap becomes 0:
+Place two pointers in their correct position like the left pointer at index 0 and the right pointer at index (left+gap).
+Again we will run a loop until the right pointer reaches the end i.e. (n+m). Inside the loop, there will be 3 different cases:
+If the left pointer is inside arr1[] and the right pointer is in arr2[]: We will compare arr1[left] and arr2[right-n] and swap them if arr1[left] > arr2[right-n].
+If both the pointers are in arr2[]: We will compare arr1[left-n] and arr2[right-n] and swap them if arr1[left-n] > arr2[right-n].
+If both the pointers are in arr1[]: We will compare arr1[left] and arr2[right] and swap them if arr1[left] > arr2[right].
+After the right pointer reaches the end, we will decrease the value of the gap and it will become ceil(current gap / 2). 
+Finally, after performing all the operations, we will get the merged sorted array.
+
+
+Time Complexity: O((n+m)*log(n+m)), where n and m are the sizes of the given arrays.
