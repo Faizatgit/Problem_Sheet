@@ -1,0 +1,13 @@
+Approach:
+The steps are as follows:
+
+We will run a loop(say i) from 1 to N.
+For each integer, i, we will count its occurrence in the given array using linear search.
+We will store those two elements that have the occurrence of 2 and 0.
+Finally, we will return the elements.
+Note: For a better understanding of intuition, please watch the video at the bottom of the page.
+
+Time Complexity: O(N2), where N = size of the given array.
+Reason: Here, we are using nested loops to count occurrences of every element between 1 to N.
+
+Space Complexity: O(1) as we are not using any extra space.
