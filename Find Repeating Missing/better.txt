@@ -1,0 +1,11 @@
+The steps are as follows:
+
+The range of the number is 1 to N. So, we need a hash array of size N+1 (as we want to store the frequency of N as well).
+We will iterate all the elements of the given array and update the hash array accordingly i.e. hash[a[i]] = hash[a[i]]+1.
+Now, we will iterate on the hash array and return the two elements with frequencies 2 and 0.
+Note: For a better understanding of intuition, please watch the video at the bottom of the page.
+
+Time Complexity: O(2N), where N = the size of the given array.
+Reason: We are using two loops each running for N times. So, the time complexity will be O(2N).
+
+Space Complexity: O(N) as we are using a hash array to solve this problem.
