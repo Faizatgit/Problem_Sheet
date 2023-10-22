@@ -1,0 +1,14 @@
+Approach:
+Assume the repeating number to be X and the missing number to be Y.
+
+The steps are as follows:
+
+First, find out the values of S and Sn and then calculate S – Sn (Using the above formulas).
+Then, find out the values of S2 and S2n and then calculate S2 – S2n.
+After performing steps 1 and 2, we will be having the values of X + Y and X – Y. Now, by substitution of values,
+we can easily find the values of X and Y.
+
+Time Complexity: O(N), where N = the size of the given array.
+Reason: We are using only one loop running for N times. So, the time complexity will be O(N).
+
+Space Complexity: O(1) as we are not using any extra space to solve this problem.
