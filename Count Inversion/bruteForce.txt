@@ -1,0 +1,13 @@
+Approach:
+
+The steps are as follows:
+
+First, we will run a loop(say i) from 0 to N-1 to select the first element in the pair.
+As index j should be greater than index i, inside loop i, we will run another loop i.e. j from i+1 to N-1.
+Inside this second loop, we will check if a[i] > a[j] i.e. if a[i] and a[j] can be a pair. 
+If they satisfy the condition, we will increase the count by 1.
+Finally, we will return the count i.e. the number of such pairs.
+Intuition: The naive approach is pretty straightforward. We will use nested loops to solve this problem. 
+We know index i must be smaller than index j. So, we will fix i at one index at a time through a loop, and with another loop, 
+we will check(the condition a[i] > a[j]) the elements from index i+1 to N-1  if they can form a pair with a[i]. 
+This is the first naive approach we can think of.
