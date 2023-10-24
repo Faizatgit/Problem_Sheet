@@ -11,3 +11,8 @@ Intuition: The naive approach is pretty straightforward. We will use nested loop
 We know index i must be smaller than index j. So, we will fix i at one index at a time through a loop, and with another loop, 
 we will check(the condition a[i] > a[j]) the elements from index i+1 to N-1  if they can form a pair with a[i]. 
 This is the first naive approach we can think of.
+
+Time Complexity: O(N2), where N = size of the given array.
+Reason: We are using nested loops here and those two loops roughly run for N times.
+
+Space Complexity: O(1) as we are not using any extra space to solve this problem.
