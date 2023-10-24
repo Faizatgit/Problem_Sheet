@@ -1,0 +1,16 @@
+Approach:
+
+The steps are the following:
+
+We will sort the given array first.
+Now, we will take two pointers i.e. left, which points to the first index, and right, which points to the last index.
+Now using a loop we will check the sum of arr[left] and arr[right] until left < right.
+If arr[left] + arr[right] > sum, we will decrement the right pointer.
+If arr[left] + arr[right] < sum, we will increment the left pointer.
+If arr[left] + arr[right] == sum, we will return the result.
+Finally, if no results are found we will return “No” or {-1, -1}.
+
+Time Complexity: O(N) + O(N*logN), where N = size of the array.
+Reason: The loop will run at most N times. And sorting the array will take N*logN time complexity.
+
+Space Complexity: O(1) as we are not using any extra space.
