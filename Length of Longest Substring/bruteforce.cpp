@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include <unordered_set>
 #include <climits>
 using namespace std;
@@ -7,21 +8,20 @@ int solve(string str)
 {
     int n = str.size();
     int maxi = INT_MIN;
-    int l = 0;
-    unordered_set<char> set;
 
-    for (int r = 0; r < n; r++)
+    for (int i = 0; i < n; i++)
     {
-        if (set.find(str[r]) != set.end())
+        unordered_set<char> set;
+        for (int j = i; j < n; j++)
         {
-            while (l < r && set.find(str[r]) != set.end())
+            if (set.find(str[j]) != set.end())
             {
-                set.erase(str[r]);
-                l++;
+                maxi = max(maxi, j - i);
+                break;
             }
+
+            set.insert(str[j]);
         }
-        set.insert(str[r]);
-        maxi = max(maxi, r - l + 1);
     }
     return maxi;
 }
