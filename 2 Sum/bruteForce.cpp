@@ -36,31 +36,31 @@ vector<int> twoSumProb(vector<int> &arr, int target)
     int n = arr.size();
     for (int i = 0; i < n; i++)
     {
-        for (int j = i+1; j < n; j++)
+        for (int j = i + 1; j < n; j++)
         {
-            if(arr[i]+arr[j] == target)
+            if (arr[i] + arr[j] == target)
             {
                 ans.push_back(i);
                 ans.push_back(j);
                 return ans;
             }
         }
-        
     }
-    
-    return {-1,-1};
+
+    return {-1, -1};
 }
 
 int main()
 {
     vector<int> arr = {2, 6, 5, 8, 11};
     int target = 14;
-    vector<int> res = twoSumProb(arr,target);
-    cout<<"Indexs are: "<<endl;
-    for(auto i:res)
+    vector<int> res = twoSumProb(arr, target);
+    cout << "Indexs are: " << endl;
+    for (auto i : res)
     {
-        cout<<i<<" ";
-    }cout<<endl;
+        cout << i << " ";
+    }
+    cout << endl;
 
     return 0;
 }
